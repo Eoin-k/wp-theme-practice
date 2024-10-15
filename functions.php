@@ -9,7 +9,7 @@ function styleLoader()
 	wp_register_style('google', 'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 	wp_enqueue_style('google');
 	wp_enqueue_script('main-university-javascript', get_theme_file_uri('/build/index.js'), array('jquery'), 1.0, true);
-	wp_enqueue_script('maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyDYFCzn5B7AC_RCQxK6SxWl2QrE4hb-H2A', null, '1.0');
+	wp_enqueue_script('maps', '//maps.googleapis.com/maps/api/js?key=', null, '1.0');
 
 	wp_localize_script('main-university-javascript', 'university', [
 		'root' => get_site_url(),
